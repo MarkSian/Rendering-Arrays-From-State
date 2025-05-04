@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import Learner from './components/Learner';
 
 function App() {
-  const [learnerData] = useState({
+  // learners is in the useState hook to set the initial state of the learners array.
+  const [learnerData] = useState({ // no setLearnerData needed as we are not updating data.
     learners: [
-      {
+      { 
         name: 'Cait Yomorta',
         bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus placeat nostrum explicabo? Voluptatibus expedita saepe officia optio, commodi totam ratione laudantium ipsum porro molestias, quasi nulla minus vitae laboriosam corrupti Delectus inventore explicabo est odit incidunt rem a recusandae eum pariatur. Aperiam doloremque blanditiis harum voluptate animi fugit beatae asperiores quo, dignissimos sed illum veniam eum accusantium nulla quod voluptatum',
         scores: [
